@@ -2,9 +2,6 @@ var readlineSync = require("readline-sync");
 
 var score = 0;
 
-
-
-// array of objects
 var questions = [
   {
   question: "what is my surname: ",
@@ -39,22 +36,17 @@ var questions = [
   answer:"Aron",
   },
   
-  {
-    question:"Do you like movies",
-    answer:"Yes",
-  }
+ 
   {
   question: "Which is my favourite movie: ",
-  answer: "kashmir-files"
-},
-                 
-                
+  answer: "kgf"
+}
 ];
 
 function welcome() {
  var userName = readlineSync.question("What's your name? ");
 
-  console.log("Welcome "+ userName + " to do you Knowkno Shivani?");
+  console.log("Welcome "+ userName + " to do you Know Shivani?");
 }
 
 
@@ -86,9 +78,8 @@ function showScores() {
   console.log("YAY! You SCORED: ", score);
 
   console.log("Check out the high scores, if you should be there ping me and I'll update it");
-
-  highScores.map(score => console.log(score.name, " : ", score.score))
 }
+
 
 
 welcome();
