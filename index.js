@@ -2,36 +2,59 @@ var readlineSync = require("readline-sync");
 
 var score = 0;
 
-// data of high score
-var highScores = [
-  {
-    name:"shivani",
-    score: 10,
-  },
 
-  {
-    name: "Akash",
-    score: 17,
-  },
-]
 
 // array of objects
-var questions = [{
-  question: "Which is your favourite place?: ",
+var questions = [
+  {
+  question: "what is my surname: ",
+  answer: "soni"
+},
+  {
+  question: "What is my nick name: ",
+  answer: "bittu"
+},
+                {
+  question: "When is my birthday: ",
+  answer: "24th may"
+},
+                  
+                 
+  {
+  question: "Which is my favourite place: ",
   answer: "kashmir"
-}, {
-  question: "My favorite superhero would be? ",
-  answer: "papa"
+},
+                 
+{
+  question: "My favorite superhero is: ",
+  answer: "Thor"
 },
 {
-  question: "Where do I work? ",
-  answer: "tcs"
-}];
+  question: "What i am doing now a days: ",
+  answer: "levelzero"
+},
+                 
+  {
+  question:"Where do i live?: ",
+  answer:"Aron",
+  },
+  
+  {
+    question:"Do you like movies",
+    answer:"Yes",
+  }
+  {
+  question: "Which is my favourite movie: ",
+  answer: "kashmir-files"
+},
+                 
+                
+];
 
 function welcome() {
  var userName = readlineSync.question("What's your name? ");
 
-  console.log("Welcome "+ userName + " to DO YOU KNOW Tanay?");
+  console.log("Welcome "+ userName + " to do you Knowkno Shivani?");
 }
 
 
